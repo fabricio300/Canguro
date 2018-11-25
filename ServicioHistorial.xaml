@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CanguroR.ServicioHistorial">
+
+    <ContentPage.Resources>
+        <Style TargetType="Editor">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+            <Setter Property="IsEnabled" Value="False"/>
+            <Setter Property="AutoSize" Value="TextChanges"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="XAlign" Value="Start"/>
+            <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+        </Style>
+        
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Acciones punto (A)" />
+                    <Editor Text="  Descripción Descripción Descripción Descripción
+                            Descripción Descripción Descripción Descripción Descripción
+                            Descripción Descripción Descripción Descripción Descripción
+                            Descripción Descripción Descripción Descripción Descripción
+                            Descripción Descripción Descripción Descripción Descripción
+                            Descripción " 
+                           
+                           
+                                />
+                    <Label Text="direccion A"/>
+                    <Editor Text="dirección dirección dirección dirección dirección "/>
+                    <Label Text="Acciones punto (B)"/>
+                    <Editor  Text="Descripción Descripción Descripción Descripción Descripción Descripción Descripción Descrip"
+                            
+                           
+                                />
+                    <Label Text="direccion B"/>
+                    <Editor Text="dirección dirección dirección dirección dirección "/>
+                    <Label Text="Referencias"/>
+                    <Editor  
+                                TextColor="Green"
+                                HeightRequest="70"
+                                />
+
+
+
+
+
+
+
+
+                </StackLayout>  
+
+            </ScrollView>
+            <Button Text="Cerrar" Clicked="Regresar"
+                     BackgroundColor="#20B2AA" 
+                            TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

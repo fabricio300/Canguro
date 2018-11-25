@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CanguroR.HistorialP">
+    <ContentPage.Resources>
+        <Style x:Key="labelsServicios" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#DCDCDC" />
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="HeightRequest" Value="45"/>
+        </Style>
+       
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Historial de servicios"
+                FontSize="30" 
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"/>
+            <ScrollView Margin="5,15,5,0">
+                <StackLayout>
+                    <Button  Style="{StaticResource  labelsServicios}" Text="Fecha / Hora" Clicked="irElemeto"/>
+                    <Button Style="{StaticResource  labelsServicios}" Text="Fecha / Hora" />
+                    
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
