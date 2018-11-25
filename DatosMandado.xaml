@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CanguroR.DatosMandado">
+    <ContentPage.Resources>
+        <Style TargetType="Editor">
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="InputTransparent" Value="False"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter  Property="HeightRequest" Value="80"/>
+            <Setter Property="Margin" Value="15"/>
+            <Setter Property="PlaceholderColor" Value="Red"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="XAlign" Value="Start"/>
+            <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+        </Style>
+        
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+
+        <ScrollView>
+                <StackLayout>
+                    <Label Text="Acciones punto (A)" />
+                    <Editor VerticalOptions="FillAndExpand" 
+                           
+                           
+                            />
+                <Label Text="direccion A"/>
+                <Entry />
+                    <Label Text="Acciones punto (B)"/>
+                    <Editor VerticalOptions="FillAndExpand" 
+                            
+                           
+                            />
+                <Label Text="direccion B"/>
+                <Entry />
+                    <Label Text="Referencias"/>
+                    <Editor VerticalOptions="FillAndExpand" 
+                            TextColor="Green"
+                            HeightRequest="70"
+                            />
+               
+                <FlexLayout HorizontalOptions="EndAndExpand">
+                    <Label VerticalOptions="Center" Text="Entrega inmediata"/>
+                    <Switch VerticalOptions="Center"  HorizontalOptions="EndAndExpand"
+                            Toggled="seleccion"/>
+                </FlexLayout>
+              
+                <StackLayout x:Name="FechaHara" HeightRequest="190">
+                    <Label VerticalOptions="Center"  Text="Fecha:"/>
+                    <DatePicker VerticalOptions="Center" WidthRequest="70" />
+                    <Label VerticalOptions="Center" Text="Hora:"/>
+                    <Entry VerticalOptions="Center" WidthRequest="70"/>
+                </StackLayout>       
+                    
+                
+                    
+               
+                   
+                    
+                        <Button Text="Aceptar" 
+                            BackgroundColor="#20B2AA" 
+                            TextColor="White"
+                            Clicked="IrFechaHora"/>
+                </StackLayout>
+                
+            
+        </ScrollView>
+       
+    </ContentPage.Content>
+</ContentPage>
